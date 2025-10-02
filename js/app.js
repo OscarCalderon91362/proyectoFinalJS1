@@ -1,3 +1,17 @@
+ import { Ingreso } from './Ingreso.js';
+ import { Egreso } from './Egreso.js';
+
+//Arreglos
+const ingresos = [
+  new Ingreso('Salario', 20000),
+  new Ingreso('Venta auto', 50000)
+];
+
+const egresos = [
+  new Egreso('Renta', 4000),
+  new Egreso('Ropa', 800)
+];
+
 // Función flecha para formatear valores como porcentaje
 const formatoPorcentaje = valor => {
   return valor.toLocaleString('es-MX', {
@@ -15,20 +29,9 @@ const formatoMoneda = valor => {
   });
 };
 
-let ingresos = [
-  { descripcion: "Quincena", valor: 9000 },
-  { descripcion: "Venta", valor: 400 }
-];
-
-let egresos = [
-  { descripcion: "Renta", valor: 900 },
-  { descripcion: "Ropa", valor: 400 }
-];
-
 // Función flecha para calcular el total de ingresos
 const totalIngresos = () => {
-
-    let totalIngreso = 0;
+  let totalIngreso = 0;
   for (const ingreso of ingresos) {
     totalIngreso += ingreso.valor;
   }
