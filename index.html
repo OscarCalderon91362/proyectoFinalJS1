@@ -11,11 +11,11 @@
     <div class="cabecero">
       <div class="presupuesto">
         <div class="presupuesto_titulo">Presupuesto Disponible</div>
-        <div class="presupuesto_valor">2300,00 MXN</div>
+        <div id="presupuesto" class="presupuesto_valor">2300,00 MXN</div>
         <div class="presupuesto_ingreso limpiarEstilos">
           <div class="presupuesto_ingreso--texto">Ingresos</div>
           <div class="derecha">
-            <div class="presupuesto_ingreso—valor">3600,00 MXN</div>
+            <div id="ingresos" class="presupuesto_ingreso--valor">3600,00 MXN</div>
             <div class="presupuesto_ingreso--porcentaje"></div>
           </div>
         </div>
@@ -23,14 +23,14 @@
         <div class="presupuesto_egreso limpiarEstilos">
           <div class="presupuesto_egreso--texto">Egresos</div>
           <div class="derecha limpiarEstilos">
-            <div class="presupuesto_egreso--valor">3600,00 MXN</div>
-            <div class="presupuesto_egreso--porcentaje">36.11%</div>
+            <div id="egresos" class="presupuesto_egreso--valor">3600,00 MXN</div>
+            <div id="porcentaje" class="presupuesto_egreso--porcentaje">36.11%</div>
           </div>
         </div>
       </div>
     </div>
 
-    <form id="forma">
+    <form id="forma" onsubmit="return false">
       <div class="agregar">
         <div class="agregar_contenedor">
           <select name="tipo" id="tipo" class="agregar_tipo">
@@ -44,12 +44,13 @@
             id="descripcion"
           />
           <input
+          id="valor"
             type="number"
             class="agregar_valor"
             placeholder="Valor"
             step="any"
           />
-          <button class="agregar_btn">
+          <button id="agregarValor_btn" class="agregar_btn">
             <ion-icon name="checkmark-circle-outline"></ion-icon>
           </button>
         </div>
