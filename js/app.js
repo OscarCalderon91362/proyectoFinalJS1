@@ -61,7 +61,6 @@ document.getElementById('presupuesto').innerHTML = formatoMoneda(presupuesto);
     document.getElementById('porcentaje').innerHTML = formatoPorcentaje(0);
   }
   
-  //document.getElementById('porcentaje').innerHTML = formatoPorcentaje(porcentajeEgreso);
   document.getElementById('ingresos').innerHTML = formatoMoneda(totalIngresos());
   document.getElementById('egresos').innerHTML = formatoMoneda(totalEgresos());
 
