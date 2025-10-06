@@ -1,5 +1,5 @@
- import { Ingreso } from './Ingreso.js';
- import { Egreso } from './Egreso.js';
+ import { Ingreso } from '/js/Ingreso.js';
+ import { Egreso } from '/js/Egreso.js';
 
 //Arreglos
 const ingresos = [
